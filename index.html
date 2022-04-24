@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .nav {
+            background-color: rgb(55, 35, 235);
+            font-family: 'Courier New', Courier, monospace;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+
+        .text {
+            color: hsl(0, 0%, 100%);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="text">
+            <h2>CGPA Calculator</h2>
+        </div>
+        <div class="text">
+            <p>For VIT Students</p>
+        </div>
+    </header>
+
+    <div class="first_input">
+        <form>
+            <input type="number" id="num" name="num" placeholder="Enter Number of Subjects" name="num" />
+            <button onclick="start(form.num.value)">Submit</button>
+        </form>
+        <div id="calculator"></div>
+    </div>
+    </form>
+    <div id="calculator">
+    </div>
+    <script>
+        let calc = document.getElementById('calculator')
+        function start(x) {
+            event.preventDefault();
+            for (let i = 0; i < x; i++) {
+                let div = document.createElement('div');
+                let p = document.createElement('p');
+            }
+            console.log(x)
+        }
+    </script>
+</body>
+
+</html>
